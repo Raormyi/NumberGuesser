@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
+        <title>Number Guesser</title>
+        <link rel="stylesheet" href="numberguesser.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <header>
+      <div class="settings-btn">
+        <i class="fa fa-cog"></i>
+      </div>
+    </header>
+
+
+    <body>
+        <script src="numberguesser.js"></script>
+        <h1>Number Guesser</h1>
+        <div class="range">
+            <h2>Create a range of numbers</h2>
+            <div class="fromto">
+                <p class="errormsg"> </p>
+                <label for="min">From: </label>
+                <input id="min" class="minn" value="1">
+                <label for="max">To: </label>
+                <input id="max" class="maxn" value="100">
+                <button class="start" type="submit" onclick="numbgenerator()">START</button>
+            </div>
+        </div>
+        <div class="guessing">
+            <h2 for="guess">Enter a number</h2>
+            <input id="guess">
+            <button onclick="attemps()"><a >GUESS</a></button>
+            <p class="reply"></p>
+        </div>
+        <p id="res"></p>
+        
+        <div id="cube">
+            <div class="face front">
+              <div class="dot first"></div>
+              <div class="dot second"></div>
+              <div class="dot third"></div>
+            </div>
+            <div class="face back">
+              <div class="dot first"></div>
+              <div class="dot second"></div>
+              <div class="dot third"></div>
+            </div>
+            <div class="face top">
+              <div class="dot first"></div>
+              <div class="dot second"></div>
+              <div class="dot third"></div>
+            </div>
+            <div class="face bottom">
+              <div class="dot first"></div>
+              <div class="dot second"></div>
+              <div class="dot third"></div>
+            </div>
+            <div class="face left">
+              <div class="dot first"></div>
+              <div class="dot second"></div>
+              <div class="dot third"></div>
+            </div>
+            <div class="face right">
+              <div class="dot first"></div>
+          
+        
+    </body>
+</html>
